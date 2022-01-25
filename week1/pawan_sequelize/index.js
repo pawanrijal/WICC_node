@@ -6,7 +6,7 @@ const { initRoutes } = require("./routes");
 const { sequelize } = require("./lib/databaseConnection");
 
 sequelize.authenticate().then(() => {
-    
+    //sequelize.sync({ alter: true });
     console.log("Database connected successfully");
   }).catch((err) => {
     console.log(err.message);
