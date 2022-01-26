@@ -11,12 +11,10 @@ module.exports = (sequelize, type) => {
     body: {
       type: type.STRING(200),
       allowNull: false,
-      unique: true,
     },
     category: {
       type: type.STRING(20),
       allowNull: false,
-      unique: true,
     },
     author: {
       field: "author",
